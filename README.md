@@ -1,37 +1,53 @@
-# longest-road-coding-game
- Determine which player in a rectangular "Settlers of Catan" themed game board has the longest road.
+# Coding game challange - Longest road
 
-    * Goal
-    Determine which player in a rectangular "Settlers of Catan" themed game board has the longest road.
+Determine which player in a rectangular "Settlers of Catan" themed game board has the longest road.
 
-    Given an ascii game board:
+## Goal
 
-        aa##b
-        #A##B
-        #aa#b
-        ##a##
+Determine which player in a rectangular "Settlers of Catan" themed game board has the longest road.
 
-    The lower case letters "a" denote a road belonging to player A.
-    Uppercase letters denote a settlement.
+Given an ascii game board:
 
-    If a player has at least 5 consecutive (non-repeating) roads then they can be awarded the "longest road" victory points.
-    Roads connected diagonally are not considered consecutive. Roads can be linked together by settlements, but the settlements do not count towards the total length of the player's roads. In the above example player A would have the longest road with a length of 5.
+```
+aa##b
+#A##B
+#aa#b
+##a##
+##a##
+```
 
-    The input will never include the case where multiple players are tied for longest road.
+The lower case letters "a" denote a road belonging to player A.
+Uppercase letters denote a settlement.
 
-    Loops and branches
-    A road may form a loop or branch out in multiple directions. In all cases the longest possible consecutive link of roads is used to determine the players' longest roads.
+If a player has at least 5 consecutive (non-repeating) roads then they can be awarded the "longest road" victory points.
+Roads connected diagonally are not considered consecutive. Roads can be linked together by settlements, but the settlements do not count towards the total length of the player's roads. In the above example player A would have the longest road with a length of 5.
 
-    Inspired by the board game "Settlers of Catan" by Klaus Teuber.
-    Image by dograapps from Pixabay.
+The input will never include the case where multiple players are tied for longest road.
 
-    *Input
-    Line 1: Integer n the length of the square board.
-    Next n lines: String of characters representing the game board. # represents an open space. Lowercase letters represent roads, and uppercase letters represent settlements.
-    *Output
-    Output the capital letter of the player with the longest road, and the length of the road, e.g. A 6.
-    If no player has the longest road then output the number 0.
-    *Constraints
-    5 ≤ n ≤ 10
+Loops and branches
+A road may form a loop or branch out in multiple directions. In all cases the longest possible consecutive link of roads is used to determine the players' longest roads.
 
-    Learned skills: Depth first search, Ascii art
+Inspired by the board game "Settlers of Catan" by Klaus Teuber.
+Image by dograapps from Pixabay.
+
+---
+
+## Input
+
+Line 1: Integer `n` the length of the square board.
+Next n lines: String of characters representing the game board. `#` represents an open space. Lowercase letters represent roads, and uppercase letters represent settlements.
+
+## Output
+
+Output the capital letter of the player with the longest road, and the length of the road, e.g. `A 6`.
+If no player has the longest road then output the number `0`.
+
+## Constraints
+
+`5 ≤ n ≤ 10`
+
+---
+
+Learned skills: Depth first search, Ascii art
+
+[Contribution by @Jumpmaster](https://www.codingame.com/ide/puzzle/longest-road)
